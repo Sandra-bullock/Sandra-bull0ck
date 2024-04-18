@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+         <style>
+      /* CSS for links */
+       a {
+        display: inline-block;
+        padding: 7px 15px;
+        background-color: #007bff; /* Blue background */
+        color: #fff; /* White text */
+        text-decoration: none;
+        border-radius: 5px; /* Rounded corners */
+      }
+
+      .buttons a:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+      }</style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scam Alert</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="active"> <!-- Add the "active" class to make the modal visible by default -->
+      <!-- Remove the button -->
+      <!-- <button class="show-modal">Show Modal</button> -->
+      <span class="overlay"></span>
+
+      <div class="modal-box">
+
+       <center><img src="scam.gif" width="180px" alt=""></center>
+            <h2>Notice! Notice! Notice!</h2><br>
+        <h style ="color: red ;">This Account is unverified and not found to be any of Sandra Bullock Accounts so this is definitely a FAKE ACCOUNT please stay off this account and kindly Click on the button below to report this account. </h>
+        
+
+        <div class="buttons">
+          <!-- Change the "Ok, Close" button to a link -->
+          
+          <!-- Change the "Open File" button to a link -->
+          <a href="https://www.facebook.com/sandra.a.bullock.official">Report Account</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const section = document.querySelector("section"),
+        overlay = document.querySelector(".overlay"),
+        closeBtn = document.querySelector(".close-btn");
+
+      overlay.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+
+      closeBtn.addEventListener("click", () => {
+        // Redirect to the home page when "Ok, Close" is clicked
+        window.location.href = "your_home_page_url_here";
+      });
+    </script>
+  </body>
+</html>
