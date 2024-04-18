@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple upgrade</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    .loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background: #fff url(images/settings.gif) no-repeat center center;
+     background-size:100% ;
+     height:100vh ;
+     width: 100%;
+     position: fixed;
+     z-index:100;}
+
+.disppear{
+  animation: vanish 5s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity:2;
+    visibility: hidden;
+  }
+}
+
+
+
+</style>
+<body>
+    
+<div class="loader">
+      
+    </div>
+
+<header>
+
+    
+
+    <a href="#" class="logo">Sandra Bullock Search Engine</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#products">products</a>
+        <a href="#featured">featured</a>
+        <a href="#review">review</a>
+    </nav>
+
+    <div class="icons">
+        
+        <a href="#" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+
+
+<section class="newsletter">
+
+    <div class="content"><br><br><br><br><br><br>
+    <center>  <img src="images/search.jpg"  width ="350" height ="180"alt=""> </center><br> <h3>Search to find fake sandra bullock accounts here:</h3>
+    <br>
+        <p>Welcome to Sandra Bullock Account Verification engine, With our cutting-edge system, you can effortlessly verify any online profile associated with "Sandra Bullock." Simply paste the profile link you've encountered, and our advanced algorithms will analyze it to determine its authenticity. Our mission is to empower you to distinguish between genuine and fake accounts, ensuring a safe and trustworthy online presence for Sandra Bullock. Don't fall victim to imposters—let us help you navigate the digital realm with confidence.</p><br><br>
+        
+       <form action="">     
+                     
+ <input type="text" class="box" id="inputField" name="inputField" class="input-field" placeholder="Enter profile link">
+ 
+    
+       <button class="btn" type="button" onclick="redirectToWebsite()">Check</button>    
+                   </form>
+    </div>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        
+       
+        <div class="box">
+            <h3>WhatsApp Us For:</h3>
+            <a href="#">Register your Membership</a>
+            <a href="#">Get your  Real Fan Card</a>
+            <a href="#">Report A Fake Profile</a>
+            <a href="#">Get Help from Support Team</a>
+        </div>
+
+        
+
+        <div class="credit">created by <span> sandra bullock tech team</span> | all rights reserved</div>
+
+    </div>
+
+</section>
+
+
+
+<script type="text/javascript">
+    function redirectToWebsite() {
+        var inputValue = document.getElementById("inputField").value;
+        
+        if (inputValue === "12345") {
+            window.location.href = "https://example1.com";
+        } else if (inputValue === "56789") {
+            window.location.href = "https://example2.com";
+        } else if (inputValue === "ABCDE") {
+            window.location.href = "https://example3.com";
+        } else if (inputValue === "FGHIJ") {
+            window.location.href = "https://example4.com";
+        } else {
+            window.location.href = "https://error.html";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script>
+    var loader = document.querySelector(".loader")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
+
+</script>
+    
+</body>
+</html>

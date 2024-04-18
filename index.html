@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9FEF8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #F9FEF8;
+                  
+            
+            
+     height:100%;   }
+
+        h2 {
+            color: #475569;
+          
+            margin-left:0px;        }
+
+        p {
+            color: #666666;
+            margin-bottom:10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #004080;
+        }
+        img{
+            width:85%;
+        }
+    </style>
+    <script>
+        // JavaScript functions here...
+    </script>
+</head>
+<body onload="checkVerification()">
+    <div class="container">
+        <h2>Sandra bullock website  security check gate<br>
+       </h2>
+        
+       <p>Please wait...</p> 
+        <h><img src="verify.gif" ></h2>
+        
+        
+
+        
+        <button onclick="verifyHuman()">I'm not a robot</button>
+        
+        <br><br><br>
+        
+        <p>This website needs to review the security of your connection before processing and also verify you're not a robot or any malicious bot</p>
+    </div>
+</body>
+
+
+
+<script>
+        // Wait for 7 seconds (7000 milliseconds) before redirecting to the next page
+        setTimeout(function() {
+            window.location.href = "next_page.html"; // Change "next_page.html" to the URL of your next page
+        }, 6500);
+    </script>
+</html>
