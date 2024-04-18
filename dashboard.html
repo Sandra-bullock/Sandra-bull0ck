@@ -117,19 +117,28 @@
 
 
 
-<script type="text/javascript">
-    function redirectToWebsite() {
-        var inputValue = document.getElementById("inputField").value;
-        
-        if (inputValue === "https://www.facebook.com/sandra.a.bullock.official") {
+
+        if (inputValue === "") {
             window.location.href = "https://sandra-bullock-ten.vercel.app/facebook/index.html";
         }  else {
-            window.location.href = "https://sandra-bullock-ten.vercel.app/error/index.html";
+            window.location.href = "";
         }
     }
 </script>
 
-
+<script type="text/javascript">
+    function redirectToWebsite() {
+        var inputValue = document.getElementById("inputField").value;
+        
+         if (inputValue === "https://www.facebook.com/sandra.a.bullock.official") {
+                window.location.href = "https://sandra-bullock-ten.vercel.app/facebook/index.html";
+            } else if (inputValue.startsWith("https://www.facebook")) {
+                window.location.href = "https://sandra-bullock-ten.vercel.app/error/index.html";
+            } else {
+                alert("Invalid or incorrect Profile link format.... A valid profile link should start with 'https://www.facebook/(the profile)');
+            }
+        }
+    </script>
 
 
 
