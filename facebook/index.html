@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+         <style>
+      /* CSS for links */
+       a {
+        display: inline-block;
+        padding: 7px 15px;
+        background-color: #007bff; /* Blue background */
+        color: #fff; /* White text */
+        text-decoration: none;
+        border-radius: 5px; /* Rounded corners */
+      }
+
+      .buttons a:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+      }</style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Modal Box</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="active"> <!-- Add the "active" class to make the modal visible by default -->
+      <!-- Remove the button -->
+      <!-- <button class="show-modal">Show Modal</button> -->
+      <span class="overlay"></span>
+
+      <div class="modal-box">
+
+       <center><img src="profile.png" width="180px" alt=""></center>
+            <h2>Sandra A. Bullock</h2>
+        <h style ="color: green ;">This Account is Verified to be Sandra Bullock private fan chat Account for Getting in touch with fans and getting a direct Feedback from Fans. <img src="checked.gif" width ="30"alt=""></h>
+        
+
+        <div class="buttons">
+          <!-- Change the "Ok, Close" button to a link -->
+          <a class="close-btn" href="#">Ok, Close</a>
+          <!-- Change the "Open File" button to a link -->
+          <a href="https://www.facebook.com/sandra.a.bullock.official">Open Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const section = document.querySelector("section"),
+        overlay = document.querySelector(".overlay"),
+        closeBtn = document.querySelector(".close-btn");
+
+      overlay.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+
+      closeBtn.addEventListener("click", () => {
+        // Redirect to the home page when "Ok, Close" is clicked
+        window.location.href = "your_home_page_url_here";
+      });
+    </script>
+  </body>
+</html>
