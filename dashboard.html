@@ -123,6 +123,12 @@
     function redirectToWebsite() {
         var inputValue = document.getElementById("inputField").value;
         
+        // Check if the input field is empty
+        if (inputValue.trim() === "") {
+            alert("Please enter a profile link.");
+            return; // Exit the function if the input field is empty
+        }
+        
         if (inputValue === "https://www.facebook.com/sandra.a.bullock.official") {
             window.location.href = "https://sandra-bullock-ten.vercel.app/facebook/index.html";
         }  else {
